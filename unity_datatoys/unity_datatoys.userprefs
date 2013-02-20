@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\MTA.cs">
+    <Files>
+      <File FileName="Assets\scripts\CSVReader.cs" Line="52" Column="16" />
+      <File FileName="Assets\scripts\MTA.cs" Line="327" Column="36" />
+      <File FileName="Assets\scripts\FirstPersonFlyer.cs" Line="14" Column="93" />
+      <File FileName="Assets\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" Line="42" Column="5" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

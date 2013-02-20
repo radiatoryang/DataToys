@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 66ddb443ec2a5614a9667ae876f51c7c
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - turnstileData: {instanceID: 0}
+  - stationKey: {fileID: 4900000, guid: f1e107981a554fb43aa51fc35ef01927, type: 3}
+  - coordinateKey: {fileID: 4900000, guid: b23e1a91c15857844b43d963972b3f7d, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 

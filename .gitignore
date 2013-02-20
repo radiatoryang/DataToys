@@ -70,3 +70,12 @@ Desktop.ini
 /week1-movingRec/bin/data/park2/
 /week1-movingRec/bin/data/park1/
 /week1-movingRec/bin/data/Archive.zip
+unity_datatoys/Library/
+unity_datatoys/*.csproj
+unity_datatoys/*.pidb
+unity_datatoys/*.sln
+unity_datatoys/Temp/
+unity_marble_immigration/*.csproj
+unity_marble_immigration/*.pidb
+unity_marble_immigration/Library/
+unity_marble_immigration/*.sln
