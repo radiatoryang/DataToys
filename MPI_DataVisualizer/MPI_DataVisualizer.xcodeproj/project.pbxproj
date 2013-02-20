@@ -123,8 +123,8 @@
 		412e4bca71876a3b006ce76e3eb86ef8 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				efece002fa2814dbd4904261d7d3e1a8 /* ofxCsv.cpp */,
 				3bafe2897d2fabe86454a7ad3114b0da /* ofxCsv.h */,
+				efece002fa2814dbd4904261d7d3e1a8 /* ofxCsv.cpp */,
 			);
 			name = src;
 			sourceTree = "<group>";

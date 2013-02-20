@@ -14,10 +14,13 @@
 
 using namespace wng;
 
-enum mpiIndex {
-    LARGEST_CONCENTRATION,  //  0   Ten cities with largest concentration of foreing-born popultion
-    FASTEST_GROWING,        //  1   Ten cities with fastest growing foreing-born population
-    ACTIVE_RECRUITING       //  2   Ten cities most actively cruiting the foreing born 
+enum mpiStarsIndex {
+    LARGEST_CONCENTRATION,  //  1   Ten cities with largest concentration of foreing-born popultion
+    FASTEST_GROWING,        //  2   Ten cities with fastest growing foreing-born population
+    ACTIVE_RECRUITING       //  3   Ten cities most actively cruiting the foreing born
+    
+    //  Se the end of https://github.com/patriciogonzalezvivo/DataToys/blob/master/MPI_DataBase/project_overview.pdf?raw=true
+    //
 };
 
 //  GeoLocalization information of the city
@@ -28,7 +31,7 @@ struct CityLoc{
     string  name, state;        //  It's good to have names isn' t
     float   latitud, longitud;  //  This is the key to position them on a world map
     
-    mpiIndex index;             //  Using the Index described
+    mpiStarsIndex stars;    //  Using the Index described here https://github.com/patriciogonzalezvivo/DataToys/blob/master/MPI_DataBase/project_overview.pdf?raw=true
 };
 
 //  Sample by City
@@ -79,16 +82,20 @@ struct CitySample {
     float   nonEnglSpk;     //Percent: Speak other lang (than English)
     
     float   creativeClass;  //Percent: Creative class (???)
+    
+    //  NOT CLEAR??
+    //  Check this: https://github.com/patriciogonzalezvivo/DataToys/blob/master/MPI_DataBase/data_overview.pdf?raw=true
 };
 
 //  This is the actual Enginer of the MPI DATA BASE
+//  https://github.com/patriciogonzalezvivo/DataToys/blob/master/MPI_DataBase/data_overview.pdf?raw=true
 //
 class MpiData {
 public:
     
     MpiData();
     
-    void    loadCities( string _cvsFiles);             //  The ID's of the cities have to mach the one of the Samples
+    void    loadCities( string _cvsFile );             //  The ID's of the cities have to mach the one of the Samples
     void    loadSample( int _year, string _cvsFile );  //  After loading all the cities interpolate the values using the year;
 
     void    interpolateDataBase();

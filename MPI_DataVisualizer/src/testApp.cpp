@@ -10,10 +10,6 @@ void testApp::setup(){
     dBase.loadSample(2010, "2010.csv");
     dBase.interpolateDataBase();
     
-//	
-//	// Load a CSV File.
-//	A.loadFile( ofToDataPath("2000.csv") );
-//	
 //	cout << A.data[0][0] << endl;
 }
 
