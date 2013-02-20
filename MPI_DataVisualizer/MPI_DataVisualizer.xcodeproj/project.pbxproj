@@ -64,6 +64,7 @@
 /* Begin PBXFileReference section */
 		3D01D33616D44A6F006AA497 /* MpiData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MpiData.cpp; sourceTree = "<group>"; };
 		3D01D33716D44A6F006AA497 /* MpiData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MpiData.h; sourceTree = "<group>"; };
+		3D01D33A16D46A22006AA497 /* MpiElements.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MpiElements.h; sourceTree = "<group>"; };
 		3bafe2897d2fabe86454a7ad3114b0da /* ofxCsv.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxCsv.h; path = ../../../addons/ofxCsv/src/ofxCsv.h; sourceTree = SOURCE_ROOT; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
@@ -213,6 +214,7 @@
 				E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */,
 				3D01D33716D44A6F006AA497 /* MpiData.h */,
 				3D01D33616D44A6F006AA497 /* MpiData.cpp */,
+				3D01D33A16D46A22006AA497 /* MpiElements.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;

@@ -101,11 +101,79 @@ void MpiData::loadSample( int _year, string _cvsFile ){
         newYearSample.push_back(newSample);
     }
     
+    //  TODO:
+    //          - Check between witch years need to be inserted
+    //
     years.push_back(_year);
     samples.push_back(newYearSample);
 }
 
-void MpiData::interpolateDataBase(){
+int MpiData::getTotalYears(){
+    return years.size();
+}
+
+int MpiData::getTotalCities(){
+    return cities.size();
+}
+
+int MpiData::getTotalSamples(){
+    return getTotalYears()*getTotalCities();
+}
+
+int MpiData::getYearId( int _year ){
+    for (int i = 0; i < years.size(); i++){
+        if ( years[i] == _year)
+            return i;
+    }
     
+    return -1;
+}
+
+int MpiData::getCityId( string _city ){
+    for (int i = 0; i < cities.size(); i++){
+        if ( cities[i].name == _city)
+            return i;
+    }
+    
+    return -1;
+}
+
+string MpiData::getCity( int _cityId ){
+    return cities[_cityId].name;
+}
+
+string MpiData::getState( int _cityId ){
+    return cities[_cityId].state;
+}
+
+float MpiData::getLatitud( int _cityId ){
+    return cities[_cityId].latitud;
+}
+
+float MpiData::getLongitud( int _cityId ){
+    return cities[_cityId].longitud;
+}
+
+CitySample& MpiData::getSample( int _yearId, int _cityId ){
+    return samples[_yearId][_cityId];
+}
+
+int MpiData::getCityPop( int _cityId, int _year ){
+    
+    int yearId = getYearId(_year);
+    
+    if ( yearId != -1){
+        return samples[yearId][_cityId].pop;
+    } else {
+        
+        if ( (_year < years[0]) || ( _year > years[years.size()-1]) ){
+            ofLog(OF_LOG_NOTICE,"The year you are searching for is not inside the sample spectrum");
+            return -1;
+        }
+        
+        //  Interpolate
+        //
+        
+    }
 }
 
